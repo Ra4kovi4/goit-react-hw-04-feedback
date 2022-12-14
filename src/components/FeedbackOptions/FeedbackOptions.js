@@ -6,7 +6,7 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
     <Button
       key={el}
       type="button"
-      onClick={onLeaveFeedback}
+      onClick={() => onLeaveFeedback(el)}
       value={el}
       children={el}
     />
